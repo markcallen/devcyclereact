@@ -1,0 +1,19 @@
+# yamllint disable rule:truthy
+---
+name: make-pr
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          path: main
+          fetch-depth: 0
+      - name: Run Makefile
+        run: cd ${{ github.workspace }}/main && make docker-build
