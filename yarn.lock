@@ -1048,7 +1048,6 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-<<<<<<< Updated upstream
 "@babel/types@^7.16.0", "@babel/types@^7.16.7", "@babel/types@^7.16.8", "@babel/types@^7.17.0", "@babel/types@^7.4.4":
   version "7.17.0"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.17.0.tgz#a826e368bccb6b3d84acd76acad5c0d87342390b"
@@ -1056,7 +1055,7 @@
   dependencies:
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
-=======
+
 "@devcycle/devcycle-js-sdk@^1.0.0":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@devcycle/devcycle-js-sdk/-/devcycle-js-sdk-1.0.11.tgz#8491a85c0a8143f275e8f79bdf519506658f2a12"
@@ -1073,7 +1072,6 @@
   dependencies:
     "@devcycle/devcycle-js-sdk" "^1.0.0"
     hoist-non-react-statics "^3.3.2"
->>>>>>> Stashed changes
 
 "@eslint/eslintrc@^1.0.5":
   version "1.0.5"
