@@ -1,16 +1,14 @@
-<<<<<<< Updated upstream
-import '../styles/globals.css';
-=======
-import '../styles/globals.css'
-import { withDVCProvider } from '@devcycle/devcycle-react-sdk'
->>>>>>> Stashed changes
+import { ChakraProvider } from '@chakra-ui/react';
+import { withDVCProvider } from '@devcycle/devcycle-react-sdk';
+import { theme } from '../theme';
+import '../theme/styles.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+const App = ({ Component, pageProps }) => {
+  return (
+    <ChakraProvider theme={theme}>
+      <Component {...pageProps} />
+    </ChakraProvider>
+  );
+};
 
-<<<<<<< Updated upstream
-export default MyApp;
-=======
-export default withDVCProvider({ envKey: process.env.DevCycleKey })(MyApp)
->>>>>>> Stashed changes
+export default withDVCProvider({ envKey: process.env.DevCycleKey })(App);

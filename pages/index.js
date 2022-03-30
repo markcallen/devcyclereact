@@ -1,79 +1,152 @@
-<<<<<<< Updated upstream
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
-=======
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import { useDVCVariable } from '@devcycle/devcycle-react-sdk'
->>>>>>> Stashed changes
+import Link from 'next/link';
+import {
+  Container,
+  Flex,
+  VStack,
+  Grid,
+  GridItem,
+  Heading,
+  Text,
+  Center,
+  Code,
+  useBreakpointValue,
+} from '@chakra-ui/react';
+import { CardItem } from '../components/CardItem';
+import { useDVCVariable } from '@devcycle/devcycle-react-sdk';
 
 export default function Home() {
-  const variableKey = 'react-sample'
-  const defaultValue = 'false'
-  const featureVariable = useDVCVariable(variableKey, defaultValue)
+  const variableKey = 'react-sample';
+  const defaultValue = 'false';
+  const featureVariable = useDVCVariable(variableKey, defaultValue);
+  const colSpan = useBreakpointValue({ base: 2, md: 1 });
 
   return (
-    <div className={styles.container}>
+    <Container maxW="container.xl" p={0}>
       <Head>
         <title>Learn About Feature Flags</title>
-        <meta name="description" content="Created for DevCycle" />
+        <meta name="description" content="Learn About Feature Flags" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://app.devcycle.com">DevCycle</a>
-        </h1>
+      <Flex
+        h={{ base: 'auto', md: '100vh' }}
+        py={[0, 10, 20]}
+        direction={{ base: 'column-reverse', md: 'row' }}>
+        <VStack w="full" h="full" p={10} spacing={20}>
+          <Grid gap={4}>
+            <GridItem colSpan={2}>
+              <VStack w="full" h="full" p={5} spacing={5}>
+                <Heading variant="h1" as="h1" textAlign="center">
+                  Welcome to Learning about Feature Flags
+                </Heading>
+                <Heading variant="h3" textAlign="center">
+                  <a href="https://app.devcycle.com">using DevCycle</a>
+                </Heading>
+              </VStack>
+            </GridItem>
 
-      {featureVariable?.value ? 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-        : <div><h2>Variable React-Sample off</h2></div>}
+            <GridItem colSpan={2}>
+              <Center>
+                {featureVariable?.value ? (
+                  <Text>
+                    Get started by editing <Code>pages/index.js</Code>
+                  </Text>
+                ) : (
+                  <Text>Variable React-Sample off</Text>
+                )}
+              </Center>
+            </GridItem>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+            <CardItem variant="card" colSpan={colSpan}>
+              <Link href="/gettingstarted" passHref>
+                <div>
+                  <Heading as="h2" mb={4} size="lg">
+                    Getting Started
+                  </Heading>
+                  <Text>
+                    How to get started using DecCycle in a NextJS React app.
+                  </Text>
+                </div>
+              </Link>
+            </CardItem>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            <CardItem variant="card" colSpan={colSpan}>
+              <Link href="/countdown" passHref>
+                <div>
+                  <Heading as="h2" mb={4} size="lg">
+                    Non-Boolean
+                  </Heading>
+                  <Text>
+                    Using non-boolean feature flags to warn users that a site is
+                    going down at a specific time, then turning the site off
+                    that the time.
+                  </Text>
+                </div>
+              </Link>
+            </CardItem>
+            <CardItem variant="card" colSpan={colSpan}>
+              <Link href="/countdown" passHref>
+                <div>
+                  <Heading as="h2" mb={4} size="lg">
+                    Non-Boolean
+                  </Heading>
+                  <Text>
+                    Using non-boolean feature flags to warn users that a site is
+                    going down at a specific time, then turning the site off
+                    that the time.
+                  </Text>
+                </div>
+              </Link>
+            </CardItem>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}>
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            <CardItem variant="card" colSpan={colSpan}>
+              <Link href="/appversion" passHref>
+                <div>
+                  <Heading as="h2" mb={4} size="lg">
+                    App Version Specific
+                  </Heading>
+                  <Text>
+                    Using the app version to turn on and off certain features.
+                  </Text>
+                </div>
+              </Link>
+            </CardItem>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}>
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+            <CardItem variant="card" colSpan={colSpan}>
+              <Link href="/permission" passHref>
+                <div>
+                  <Heading as="h2" mb={4} size="lg">
+                    Using Feature Flags to Manage Access
+                  </Heading>
+                  <Text>
+                    Use a Feature Flag to allow user access to a certian section
+                    of the app.
+                  </Text>
+                </div>
+              </Link>
+            </CardItem>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer">
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+            <GridItem colSpan={2}>
+              <Center>
+                <a
+                  href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Powered by{' '}
+                  <Image
+                    src="/vercel.svg"
+                    alt="Vercel Logo"
+                    width={72}
+                    height={16}
+                  />
+                </a>
+              </Center>
+            </GridItem>
+          </Grid>
+        </VStack>
+      </Flex>
+    </Container>
   );
 }
