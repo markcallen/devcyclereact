@@ -56,7 +56,9 @@ after that.
 Create a new Feature Flag called `time-of-site-to-go-down`
 https://docs.devcycle.com/docs/home/feature-management/getting-started/your-first-feature
 
-Set the value to be 5 minutes from now Get this from the command line using:
+Set the value to be 5 minutes from now, in milliseconds
+
+Get this from the command line using:
 
 ```
 echo $(($(date +%s)+300))
