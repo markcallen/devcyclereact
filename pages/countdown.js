@@ -1,5 +1,11 @@
+// Non Boolean feature flag
+//
+// How to use a timestamp to turn a site off at a specific time
+//
 // Used to address the issue stated in
 // https://stackoverflow.com/questions/70360690/how-to-support-future-feature-flags-eg-the-site-will-shut-down-in-10-min/70794974#70794974
+//
+
 import { Container, Flex, VStack, Heading, Text } from '@chakra-ui/react';
 import Head from 'next/head';
 import { useDVCVariable } from '@devcycle/devcycle-react-sdk';
