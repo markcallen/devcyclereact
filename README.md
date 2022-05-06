@@ -34,6 +34,8 @@ Create a new Feature Flag called `react-sample`
 
 Set the variation on to be `true` and the variation off to be `false`.
 
+Don’t forget to **Save**.
+
 In the targetting rules serve varation on to all users. The `/` will show the
 text:
 
@@ -78,7 +80,7 @@ Get this from the command line using:
 echo $(($(date +%s)+300))
 ```
 
-Don’t forget to save
+Don’t forget to **Save**
 
 ## Docker
 
