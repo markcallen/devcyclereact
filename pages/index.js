@@ -20,7 +20,10 @@ export default function Home() {
   const variableKey = 'react-sample';
   const defaultValue = 'false';
   const featureVariable = useDVCVariable(variableKey, defaultValue);
+
   const colSpan = useBreakpointValue({ base: 2, md: 1 });
+
+  console.log(`featureVariable: ${featureVariable?.value}`);
 
   return (
     <Container maxW="container.xl" p={0}>
