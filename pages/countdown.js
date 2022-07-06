@@ -19,7 +19,7 @@ export default function CountDown() {
     return <></>;
   }
 
-  const currentTime = new Date().getTime() / 1000; // in seconds
+  const currentTime = new Date().getTime();
   let message = '';
 
   if (featureVariable.value == 0) {

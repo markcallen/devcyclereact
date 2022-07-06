@@ -61,7 +61,7 @@ Set the value to be 5 minutes from now, in milliseconds
 Get this from the command line using:
 
 ```
-echo $(($(date +%s)+300))
+echo $((($(date +%s)+300)*1000))
 ```
 
 Don’t forget to save
