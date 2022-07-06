@@ -23,8 +23,6 @@ export default function Home() {
 
   const colSpan = useBreakpointValue({ base: 2, md: 1 });
 
-  console.log(`featureVariable: ${featureVariable?.value}`);
-
   return (
     <Container maxW="container.xl" p={0}>
       <Head>
@@ -69,7 +67,7 @@ export default function Home() {
                     Getting Started
                   </Heading>
                   <Text>
-                    How to get started using DecCycle in a NextJS React app.
+                    How to get started using DevCycle in a NextJS React app.
                   </Text>
                 </div>
               </Link>
