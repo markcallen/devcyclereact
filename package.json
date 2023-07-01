@@ -14,7 +14,7 @@
   "dependencies": {
     "@chakra-ui/react": "^1.8.9",
     "@devcycle/devcycle-react-sdk": "^1.9.4",
-    "@emotion/react": "^11",
+    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11",
     "framer-motion": "^6",
     "next": "12.3.4",
