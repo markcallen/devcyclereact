@@ -613,39 +613,39 @@
   resolved "https://registry.npmjs.org/@ctrl/tinycolor/-/tinycolor-3.4.0.tgz"
   integrity sha512-JZButFdZ1+/xAfpguQHoabIXkcqRRKpMrWKBkpEZZyxfY9C1DpADFB8PEqGSTeFr135SaTRfKqGKx5xSCLI7ZQ==
 
-"@devcycle/devcycle-react-sdk@^1.11.2":
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/@devcycle/devcycle-react-sdk/-/devcycle-react-sdk-1.11.2.tgz#346e3f38c7fb5b0d9f01a2e349495ef11688f906"
-  integrity sha512-6qPdvIDu9G38DR6uR3uQ11pMBMabgXPaDPFRIR2VQFQB6OPydl2vo78R4NAhfwIP3xOPjznNllwlf/j2gH0jHw==
+"@devcycle/devcycle-react-sdk@^1.11.4":
+  version "1.11.4"
+  resolved "https://registry.yarnpkg.com/@devcycle/devcycle-react-sdk/-/devcycle-react-sdk-1.11.4.tgz#2259cc4f8c3ed3a01baaa62cff9a1e13e15c3d5b"
+  integrity sha512-X7xPU1j/k3gKMRTKQxRil2x6F+HXGsNoYivDFbRNrIdnakxm0KhAqQ3QRxMLDa7FdZBJgWg9Ff6UXKnihYX1zg==
   dependencies:
-    "@devcycle/js-client-sdk" "1.13.2"
-    "@devcycle/types" "1.1.9"
+    "@devcycle/js-client-sdk" "1.13.4"
+    "@devcycle/types" "1.1.11"
     hoist-non-react-statics "^3.3.2"
 
-"@devcycle/js-client-sdk@1.13.2":
-  version "1.13.2"
-  resolved "https://registry.yarnpkg.com/@devcycle/js-client-sdk/-/js-client-sdk-1.13.2.tgz#9b8ba531789e4a55c16693fa2a30b17aeae48335"
-  integrity sha512-ktn9Fq5CNOAXB+TMpVUNrLhVSnmknaUCbx3dJzC7jN2SIXilkQCQqqj67jAtGBtfcF65j2pofFpE2uiLyOkpBQ==
+"@devcycle/js-client-sdk@1.13.4":
+  version "1.13.4"
+  resolved "https://registry.yarnpkg.com/@devcycle/js-client-sdk/-/js-client-sdk-1.13.4.tgz#8bb635d5381db12e59ed06bb2cee7473b8a991a1"
+  integrity sha512-cUc5SDRVilJ66moiA7KXWiic08vfFiaqkYr8K7o31BLlsEb9G5t5RFq1S+fWDUkOIhEBscVLJXQJVmGS1WHYXw==
   dependencies:
-    "@devcycle/types" "1.1.9"
+    "@devcycle/types" "1.1.11"
     "@nestjs/class-validator" "0.13.4"
     axios "^1.0.0"
     axios-retry "^3.3.1"
     class-transformer "0.5.1"
-    iso-639-1 "2.1.15"
+    iso-639-1 "2.1.13"
     lodash "^4.17.21"
     reflect-metadata "0.1.13"
     ua-parser-js "^1.0.2"
     uuid "^8.3.2"
 
-"@devcycle/types@1.1.9":
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/@devcycle/types/-/types-1.1.9.tgz#e8af677f58d5539ffd43ad529aebd3a74006f402"
-  integrity sha512-UIalNff4yZHOOM7v4L/XaUYypxqU+mgMQcRqIz8hQ+ZhUnreR92ID7zTdytN6DTBYinDxJBfKaMIXZK275uQTA==
+"@devcycle/types@1.1.11":
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/@devcycle/types/-/types-1.1.11.tgz#8088c4c5ecf418961bb1dae2ba407088b8530a56"
+  integrity sha512-8lGjoyezSAr8TRl9hq3Yd9w8MIfCo2Mek6OA4zzyQg2xW6Vb5I44M0FLr8bZaSe7xP4TM74hMI2U6rSr16xeTQ==
   dependencies:
     "@nestjs/class-validator" "0.13.4"
     class-transformer "0.5.1"
-    iso-639-1 "2.1.15"
+    iso-639-1 "2.1.13"
     lodash "4.17.21"
     reflect-metadata "0.1.13"
 
@@ -2488,10 +2488,10 @@ isexe@^2.0.0:
   resolved "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
-iso-639-1@2.1.15:
-  version "2.1.15"
-  resolved "https://registry.yarnpkg.com/iso-639-1/-/iso-639-1-2.1.15.tgz#20cf78a4f691aeb802c16f17a6bad7d99271e85d"
-  integrity sha512-7c7mBznZu2ktfvyT582E2msM+Udc1EjOyhVRE/0ZsjD9LBtWSm23h3PtiRh2a35XoUsTQQjJXaJzuLjXsOdFDg==
+iso-639-1@2.1.13:
+  version "2.1.13"
+  resolved "https://registry.yarnpkg.com/iso-639-1/-/iso-639-1-2.1.13.tgz#bfca6c6b49be6f92815f1985e892d497770ea1dc"
+  integrity sha512-stYt3u6OnVDNcK4IWARGXmTOOY5Wa5g4bUmBsttZp/55ZiEjDUibR3C59ZnorKoSS0tfJmFuGMST3ksnY1zu7Q==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
