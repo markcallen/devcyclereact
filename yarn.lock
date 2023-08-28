@@ -613,19 +613,19 @@
   resolved "https://registry.npmjs.org/@ctrl/tinycolor/-/tinycolor-3.4.0.tgz"
   integrity sha512-JZButFdZ1+/xAfpguQHoabIXkcqRRKpMrWKBkpEZZyxfY9C1DpADFB8PEqGSTeFr135SaTRfKqGKx5xSCLI7ZQ==
 
-"@devcycle/devcycle-react-sdk@^1.11.7":
-  version "1.11.7"
-  resolved "https://registry.yarnpkg.com/@devcycle/devcycle-react-sdk/-/devcycle-react-sdk-1.11.7.tgz#2f06d4dc969f04b8ebccf9c8ac5b274c6aec73cb"
-  integrity sha512-8ylVutLkKnyam0k5eztdwTl/Q/xLTousi2Rf3P1dau5rRy2pB4oY2qMNj/s6nUAG9t2dpBIacWm8bgLYubXxFg==
+"@devcycle/devcycle-react-sdk@^1.11.8":
+  version "1.11.8"
+  resolved "https://registry.yarnpkg.com/@devcycle/devcycle-react-sdk/-/devcycle-react-sdk-1.11.8.tgz#23e38dd23ba3d020bd2b468c15c0775774585abf"
+  integrity sha512-gBX+tIV5jnFW0b+ySwJ9F5oZ21eSamHxfzQNXZUFvX92G2jTHD2LvBL/LgdwM7593iItmhafd0XQw7K21mR+qg==
   dependencies:
-    "@devcycle/js-client-sdk" "1.13.7"
+    "@devcycle/js-client-sdk" "1.13.8"
     "@devcycle/types" "1.1.14"
     hoist-non-react-statics "^3.3.2"
 
-"@devcycle/js-client-sdk@1.13.7":
-  version "1.13.7"
-  resolved "https://registry.yarnpkg.com/@devcycle/js-client-sdk/-/js-client-sdk-1.13.7.tgz#c28bd27c9b9414891444a1fca658f68c2b8c69dc"
-  integrity sha512-Iluj60Ij3jH7WXglJSDnNUmGGf8VJqCAQdOxeRcxm/Ox3Vd9tGFPN37bB6sprMrpC7FEJ/0suG3/khJOxpyrVA==
+"@devcycle/js-client-sdk@1.13.8":
+  version "1.13.8"
+  resolved "https://registry.yarnpkg.com/@devcycle/js-client-sdk/-/js-client-sdk-1.13.8.tgz#dbdc17cdc28b5eaa2b0431f013af9a8f1ef67715"
+  integrity sha512-RyJI46JAxDXNBf/LBtm8C+3g8ZmO1MJk+9hLW7/mvG+GqcEFjxv6+Ho/VRnJZ87s67DMJ7294lYSx8Xwu42/Mw==
   dependencies:
     "@devcycle/types" "1.1.14"
     "@nestjs/class-validator" "0.13.4"
