@@ -613,10 +613,10 @@
   resolved "https://registry.npmjs.org/@ctrl/tinycolor/-/tinycolor-3.4.0.tgz"
   integrity sha512-JZButFdZ1+/xAfpguQHoabIXkcqRRKpMrWKBkpEZZyxfY9C1DpADFB8PEqGSTeFr135SaTRfKqGKx5xSCLI7ZQ==
 
-"@devcycle/devcycle-react-sdk@^1.11.8":
-  version "1.11.8"
-  resolved "https://registry.yarnpkg.com/@devcycle/devcycle-react-sdk/-/devcycle-react-sdk-1.11.8.tgz#23e38dd23ba3d020bd2b468c15c0775774585abf"
-  integrity sha512-gBX+tIV5jnFW0b+ySwJ9F5oZ21eSamHxfzQNXZUFvX92G2jTHD2LvBL/LgdwM7593iItmhafd0XQw7K21mR+qg==
+"@devcycle/devcycle-react-sdk@^1.11.9":
+  version "1.11.9"
+  resolved "https://registry.yarnpkg.com/@devcycle/devcycle-react-sdk/-/devcycle-react-sdk-1.11.9.tgz#390a0229f37d8101336671a5afe336d7866d41a6"
+  integrity sha512-mHaMq84YRURt6ecu9l/vcwSdqxkPjacjEScGYBEv3sP+oqkWQ22Eh0P/WIaHv2AzQcNUOxakXAh1U6+EYA7LtA==
   dependencies:
     "@devcycle/js-client-sdk" "1.13.8"
     "@devcycle/types" "1.1.14"
