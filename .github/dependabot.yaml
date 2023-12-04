@@ -1,11 +1,13 @@
 version: 2
 updates:
+  # Maintain dependencies for npm
   - package-ecosystem: 'npm'
     versioning-strategy: increase
     directory: '/'
     schedule:
       interval: 'weekly'
     labels:
+      - 'npm'
       - 'dependencies'
     open-pull-requests-limit: 100
     pull-request-branch-name:
@@ -13,3 +15,14 @@ updates:
     ignore:
       - dependency-name: '*'
         update-types: ['version-update:semver-major']
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    pull-request-branch-name:
+      separator: '-'
+    labels:
+      - 'github-actions'
+      - 'dependencies'
