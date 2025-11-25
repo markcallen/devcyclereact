@@ -30,6 +30,22 @@ https://docs.devcycle.com/docs/home/feature-management/getting-started/creating-
 Then get the dev environment key `Account -> Settings -> Environments & Keys`
 and update the variable DevCycleKey in `next.config.js`
 
+Create a new Feature Flag called `react-sample`
+
+Set the variation on to be `true` and the variation off to be `false`.
+
+Don’t forget to **Save**.
+
+In the targetting rules serve varation on to all users. The `/` will show the
+text:
+
+Get started by editing `pages/index.js`
+
+If you set the targetting rules to server varation off then `/` will show this
+text:
+
+Variable React-Sample off
+
 ### Non-Boolean Feature Flag
 
 Feature flags aren’t just booleans that turn on or off a feature based upon
@@ -64,7 +80,7 @@ Get this from the command line using:
 echo $((($(date +%s)+300)*1000))
 ```
 
-Don’t forget to save
+Don’t forget to **Save**
 
 ## Docker
 

@@ -33,8 +33,11 @@
     "prettier": "^2.8.8"
   },
   "lint-staged": {
-    "*.js,*.jsx": [
-      "eslint",
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,html,css,md,yaml}": [
       "prettier --write"
     ]
   }
